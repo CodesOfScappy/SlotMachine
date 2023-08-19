@@ -1,6 +1,6 @@
-# Plot Price Calculator GUI
+# One-Armed Bandit GUI
 
-A Java Swing application to calculate the price of a plot of land including commission and value-added tax (VAT).
+A Java Swing application implementing a simple one-armed bandit game with a graphical user interface.
 
 ## Table of Contents
 
@@ -12,7 +12,7 @@ A Java Swing application to calculate the price of a plot of land including comm
 
 ## Introduction
 
-The `PlotPriceCalculatorSwing` Java Swing application is designed to calculate the price of a plot of land, considering the length, width, and price per square meter, while also factoring in commission and VAT.
+The `OneArmedBanditSwing` Java Swing application simulates a one-armed bandit game where players can try to win money by clicking the "DREHEN" (SPIN) button.
 
 ## Usage
 
@@ -20,22 +20,23 @@ To use this application, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/your-username/your-repository.git`
 2. Navigate to the project directory: `cd your-repository`
-3. Compile the Java source file: `javac de/calculator/gui/PlotPriceCalculatorSwing.java`
-4. Run the compiled class: `java de.calculator.gui.PlotPriceCalculatorSwing`
+3. Compile the Java source file: `javac de/bandit/gui/OneArmedBanditSwing.java`
+4. Run the compiled class: `java de.bandit.gui.OneArmedBanditSwing`
 
-The application's GUI will appear, allowing you to enter the length, width, and price per square meter of the plot. After clicking the "Berechnen" (Calculate) button, the calculated plot price, total price including commission, and total price including commission and VAT will be displayed.
+The one-armed bandit game's graphical user interface will appear, allowing you to click the "DREHEN" (SPIN) button and try to win money.
 
 ## Components
 
 The application includes the following components:
 
-- `JTextField` components for length, width, and price per square meter
-- `JButton` to perform the calculation
-- `JLabel` components to display the calculated plot price, total price with commission, and total price with commission and VAT
+- `JPanel` layout panels for arranging components
+- `JLabel` components for displaying current balance, bet amount, number of spins, winnings, and total winnings
+- `JButton` for spinning the one-armed bandit
+- Methods to handle button clicks, generate random integers, and display results
 
 ## Author
 
-This application was written by David Maurin.
+This application was written by [Author Name].
 
 ## Version
 
